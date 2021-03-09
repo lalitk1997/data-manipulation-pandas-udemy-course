@@ -23,9 +23,6 @@ git status
 git commit
 $ git remote add origin git@github.com:username/new_repo
 $ git push -u origin master
-
-If you want to keep the folder in the file system and just remove it from the working tree then use the –cached option as follows. Consider, we have a folder code2 containing two files. This is added and committed in the local and remote repos. For deleting it from the repo:
-1
-	
 $ git rm -r --cached code2
 git commit -m "message"
+git config core.autocrlf true

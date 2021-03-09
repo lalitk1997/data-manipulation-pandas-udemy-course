@@ -1,0 +1,31 @@
+virtual environment details:
+
+location : C:\Users\Yogesh Kumar\AppData\Roaming\Python\Python39\Scripts
+creation of new virtual environment:
+python -m pip install --user -U virtualenv
+virtualenv env_name
+activate environment:
+.\env_name\Scripts\activate
+package installation command:
+python -m pip install -U jupyter matplotlib numpy pandas scipy scikit-learn
+to check installation :
+python -c "import jupyter, matplotlib, numpy, pandas, scipy, scikit-learn"
+deactivate environment:
+deactivate
+launch application:
+jupyter notebook
+
+git command details:
+
+git init
+git add .
+git status
+git commit
+$ git remote add origin git@github.com:username/new_repo
+$ git push -u origin master
+
+If you want to keep the folder in the file system and just remove it from the working tree then use the –cached option as follows. Consider, we have a folder code2 containing two files. This is added and committed in the local and remote repos. For deleting it from the repo:
+1
+	
+$ git rm -r --cached code2
+git commit -m "message"
